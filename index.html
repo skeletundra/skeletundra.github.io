@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeletundra - Home</title>
+    <style>
+        /* general setup */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background-color: #0b1a26; color: #ffffff; line-height: 1.6; }
+
+        /* navigation */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+        .logo a { color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold; }
+        .nav-links { display: flex; gap: 40px; list-style: none; }
+        .nav-links a { color: white; text-decoration: none; }
+        .dropdown { position: relative; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; right: 0; background-color: #162a3a; min-width: 200px; border: 1px solid white; z-index: 10; }
+        .dropdown-content a { padding: 12px 16px; display: block; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        /* main layout */
+        .hero { min-height: 85vh; padding: 50px; display: flex; flex-direction: column; justify-content: space-between; }
+        .hook-box { border: 1px solid white; padding: 40px; max-width: 400px; background: rgba(255, 255, 255, 0.05); }
+        .card-container { display: flex; justify-content: center; gap: 30px; margin-top: 50px; flex-wrap: wrap; }
+        .card { border: 1px solid white; padding: 40px 20px; text-align: center; flex: 1; min-width: 250px; max-width: 350px; background: rgba(255, 255, 255, 0.05); }
+        .hyperlink-btn { display: inline-block; border: 1px solid white; padding: 8px 25px; color: white; text-decoration: none; font-size: 0.9em; }
+        .hyperlink-btn:hover { background: white; color: #0b1a26; }
+        footer { padding: 20px; border-top: 1px solid rgba(255, 255, 255, 0.3); min-height: 60px; }
+    </style>
+</head>
+<body>
+
+    <!-- todo: ensure all these file names match your github upload exactly -->
+    <header>
+        <div class="logo"><a href="index.html">Skeletundra</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    Specific Info ▾
+                    <div class="dropdown-content">
+                        <a href="oled.html">OLED Information</a>
+                        <a href="comparison.html">Comparison</a>
+                        <a href="lcd.html">LCD Information</a>
+                        <a href="resources.html">Resources</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hook-box">
+            <p>Hook, Statement on Website Purpose</p>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>OLED Information</h3>
+                <a href="oled.html" class="hyperlink-btn">hyperlink</a>
+            </div>
+            <div class="card">
+                <h3>Comparison</h3>
+                <a href="comparison.html" class="hyperlink-btn">hyperlink</a>
+            </div>
+            <div class="card">
+                <h3>LCD Information</h3>
+                <a href="lcd.html" class="hyperlink-btn">hyperlink</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
