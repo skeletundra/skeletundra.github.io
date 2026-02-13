@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skeletundra - Resources</title>
+    <title>Skeletundra | Research Resources & Works Cited</title>
+    <meta name="description" content="a comprehensive list of sources and references used for display technology research">
     <style>
-        /* global styles */
+        /* todo: shared styles for consistency */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { background-color: #0b1a26; color: #ffffff; }
+        body { background-color: #0b1a26; color: #ffffff; line-height: 1.6; }
         header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
         .logo a { color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold; }
         .nav-links { display: flex; gap: 40px; list-style: none; }
-        .nav-links a { color: white; text-decoration: none; }
+        a { color: #1e90ff; text-decoration: underline; }
         .dropdown { position: relative; cursor: pointer; }
         .dropdown-content { display: none; position: absolute; top: 100%; right: 0; background-color: #162a3a; min-width: 200px; border: 1px solid white; }
         .dropdown:hover .dropdown-content { display: block; }
-        .dropdown-content a { padding: 12px 16px; display: block; color: white; text-decoration: none; }
+        .dropdown-content a { padding: 12px 16px; display: block; }
         
-        /* resources specific list */
         .resource-container { padding: 50px; max-width: 900px; margin: 0 auto; }
-        .resource-list { list-style: none; margin-top: 30px; }
-        .resource-item { margin-bottom: 20px; padding-left: 20px; border-left: 1px solid white; }
-        .resource-link { color: #a0c4ff; text-decoration: underline; font-size: 1.1rem; }
+        h1 { margin-bottom: 40px; border-bottom: 3px solid #1e90ff; padding-bottom: 10px; }
+        .resource-list { list-style: disc; margin-left: 30px; }
+        .resource-item { margin-bottom: 25px; padding-bottom: 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
 </head>
 <body>
@@ -34,7 +34,7 @@
                     Specific Info ▾
                     <div class="dropdown-content">
                         <a href="oled.html">OLED Information</a>
-                        <a href="comparison.html">Comparison</a>
+                        <a href="comparison.html">Comparison Guide</a>
                         <a href="lcd.html">LCD Information</a>
                         <a href="resources.html">Resources</a>
                     </div>
@@ -43,17 +43,27 @@
         </nav>
     </header>
 
-    <div class="resource-container">
-        <h1>Resources</h1>
-        <!-- todo: paste your works cited links in this list -->
+    <main class="resource-container">
+        <h1>Research Resources</h1>
+        <!-- todo: semantic list for accessibility -->
         <ul class="resource-list">
             <li class="resource-item">
-                <a href="https://example.com" class="resource-link">source one title</a>
+                <p>source title placeholder</p>
+                <a href="#">https://example-link-one.com/research</a>
             </li>
             <li class="resource-item">
-                <a href="https://example.com" class="resource-link">source two title</a>
+                <p>source title placeholder</p>
+                <a href="#">https://example-link-two.com/whitepaper</a>
+            </li>
+            <li class="resource-item">
+                <p>source title placeholder</p>
+                <a href="#">https://example-link-three.com/data</a>
             </li>
         </ul>
-    </div>
+        
+        <div style="margin-top: 50px;">
+            <a href="index.html" style="font-weight: bold;">&larr; return to homepage</a>
+        </div>
+    </main>
 </body>
 </html>
