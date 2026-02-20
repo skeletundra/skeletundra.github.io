@@ -3,115 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- todo: seo keyword in meta title -->
-    <title>Skeletundra | Home - Comparison of OLED and LCD Display Tech</title>
-    <!-- todo: seo keyword in meta description -->
-    <meta name="description" content="a professional comparison and information hub for oled and lcd screen technologies">
-    <style>
-        /* global styles and high contrast compliance */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { background-color: #0b1a26; color: #ffffff; line-height: 1.6; }
-
-        /* nav is intuitive and accessible */
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-        .logo h1 { font-size: 1.5rem; }
-        .logo a { color: white; text-decoration: none; }
-        .nav-links { display: flex; gap: 40px; list-style: none; }
-        .nav-links a { color: #1e90ff; text-decoration: underline; font-weight: bold; }
-        
-        /* dropdown with aria accessibility */
-        .dropdown { position: relative; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; right: 0; background-color: #162a3a; min-width: 200px; border: 1px solid white; z-index: 10; }
-        .dropdown-content a { padding: 12px 16px; display: block; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-        .dropdown:hover .dropdown-content { display: block; }
-
-        /* mobile responsiveness and layout */
-        .hero { min-height: 80vh; padding: 50px; display: flex; flex-direction: column; justify-content: space-between; }
-        .callout { border: 2px solid white; padding: 40px; max-width: 500px; background: rgba(255, 255, 255, 0.05); margin-bottom: 30px; }
-        
-        .card-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
-        .card { border: 1px solid white; padding: 30px; text-align: center; flex: 1; min-width: 280px; background: rgba(255, 255, 255, 0.05); }
-        
-        /* high contrast hyperlink styling */
-        a { color: #1e90ff; text-decoration: underline; }
-        .cta-btn { display: inline-block; border: 2px solid #1e90ff; padding: 10px 20px; color: #1e90ff; text-decoration: none; font-weight: bold; margin-top: 15px; }
-        .cta-btn:hover { background: #1e90ff; color: #0b1a26; }
-
-        /* footer with social placeholders */
-        footer { padding: 40px 50px; border-top: 1px solid rgba(255, 255, 255, 0.3); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-        .social-icons { display: flex; gap: 15px; list-style: none; }
-        
-        @media (max-width: 768px) {
-            header, footer { flex-direction: column; text-align: center; }
-            .nav-links { flex-direction: column; gap: 10px; }
-        }
-    </style>
+    <title>OLED or LCD? | Home</title>
+    <meta name="description" content="information hub for comparing oled and lcd display technologies">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header role="banner">
-        <div class="logo">
-            <!-- todo: keyword in h1 -->
-            <h1><a href="index.html">Skeletundra | Display Technology</a></h1>
-        </div>
-        <nav role="navigation" aria-label="main navigation">
+        <div class="logo"><h1><a href="index.html">OLED or LCD?</a></h1></div>
+        <nav role="navigation">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li class="dropdown" aria-haspopup="true">
-                    Specific Info ▾
+                <li class="dropdown">
+                    <a href="#">Specific Info ▾</a>
                     <div class="dropdown-content">
                         <a href="oled.html">OLED Information</a>
                         <a href="comparison.html">Comparison Guide</a>
                         <a href="lcd.html">LCD Information</a>
-                        <a href="resources.html">Resources</a>
+                        <a href="resources.html">Resources & Contact</a>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
-
-    <main id="main-content" role="main">
-        <section class="hero">
-            <!-- todo: callout text acts as primary mission statement -->
-            <aside class="callout">
-                <h2>Our Mission</h2>
-                <p>hook: providing clarity on modern display standards through technical comparison and research</p>
-            </aside>
-
-            <div class="card-container">
-                <article class="card">
-                    <!-- todo: keyword in h2 -->
-                    <h3>OLED Information</h3>
-                    <p>subheading placeholder: exploring organic light emitting diodes</p>
-                    <a href="oled.html" class="cta-btn" aria-label="read more about oled">read more</a>
-                </article>
-                <article class="card">
-                    <h3>Tech Comparison</h3>
-                    <p>subheading placeholder: side by side display analysis</p>
-                    <a href="comparison.html" class="cta-btn" aria-label="view technology comparison">read more</a>
-                </article>
-                <article class="card">
-                    <h3>LCD Information</h3>
-                    <p>subheading placeholder: understanding liquid crystal displays</p>
-                    <a href="lcd.html" class="cta-btn" aria-label="read more about lcd">read more</a>
-                </article>
-            </div>
+    <main class="hero">
+        <aside class="callout">
+            <h2>Our Focus</h2>
+            <p>hook: evaluating the evolution of oled and lcd panel technology for modern users</p>
+        </aside>
+        <section class="card-container">
+            <article class="card">
+                <h3>OLED Details</h3>
+                <a href="oled.html" class="cta-btn">read more</a>
+            </article>
+            <article class="card">
+                <h3>Tech Table</h3>
+                <a href="comparison.html" class="cta-btn">read more</a>
+            </article>
+            <article class="card">
+                <h3>LCD Details</h3>
+                <a href="lcd.html" class="cta-btn">read more</a>
+            </article>
         </section>
     </main>
-
-    <footer role="contentinfo">
-        <div>
-            <p>&copy; 2024 skeletundra project</p>
-            <a href="resources.html">works cited and resources</a>
-        </div>
-        <!-- todo: footer links and social icons placeholder -->
-        <ul class="social-icons">
-            <li><a href="#" aria-label="visit twitter">[tw]</a></li>
-            <li><a href="#" aria-label="visit github">[gh]</a></li>
-            <li><a href="#" aria-label="visit linkedin">[in]</a></li>
-        </ul>
-    </footer>
-
+    <footer><p>&copy; 2024 oled or lcd project</p></footer>
+    <script src="script.js"></script>
 </body>
-
 </html>

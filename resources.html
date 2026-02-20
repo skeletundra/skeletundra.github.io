@@ -3,67 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skeletundra | Research Resources & Works Cited</title>
-    <meta name="description" content="a comprehensive list of sources and references used for display technology research">
-    <style>
-        /* todo: shared styles for consistency */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { background-color: #0b1a26; color: #ffffff; line-height: 1.6; }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-        .logo a { color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold; }
-        .nav-links { display: flex; gap: 40px; list-style: none; }
-        a { color: #1e90ff; text-decoration: underline; }
-        .dropdown { position: relative; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; right: 0; background-color: #162a3a; min-width: 200px; border: 1px solid white; }
-        .dropdown:hover .dropdown-content { display: block; }
-        .dropdown-content a { padding: 12px 16px; display: block; }
-        
-        .resource-container { padding: 50px; max-width: 900px; margin: 0 auto; }
-        h1 { margin-bottom: 40px; border-bottom: 3px solid #1e90ff; padding-bottom: 10px; }
-        .resource-list { list-style: disc; margin-left: 30px; }
-        .resource-item { margin-bottom: 25px; padding-bottom: 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-    </style>
+    <title>OLED or LCD? | Resources</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo"><a href="index.html">Skeletundra</a></div>
-        <nav>
+    <header role="banner">
+        <div class="logo"><h1><a href="index.html">OLED or LCD?</a></h1></div>
+        <nav role="navigation">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    Specific Info ▾
+                    <a href="#">Specific Info ▾</a>
                     <div class="dropdown-content">
                         <a href="oled.html">OLED Information</a>
                         <a href="comparison.html">Comparison Guide</a>
                         <a href="lcd.html">LCD Information</a>
-                        <a href="resources.html">Resources</a>
+                        <a href="resources.html">Resources & Contact</a>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
-
-    <main class="resource-container">
-        <h1>Research Resources</h1>
-        <!-- todo: semantic list for accessibility -->
-        <ul class="resource-list">
-            <li class="resource-item">
-                <p>source title placeholder</p>
-                <a href="#">https://example-link-one.com/research</a>
-            </li>
-            <li class="resource-item">
-                <p>source title placeholder</p>
-                <a href="#">https://example-link-two.com/whitepaper</a>
-            </li>
-            <li class="resource-item">
-                <p>source title placeholder</p>
-                <a href="#">https://example-link-three.com/data</a>
-            </li>
+    <main class="container">
+        <h1>Resources & Contact</h1>
+        <ul>
+            <li><a href="https://www.rtings.com">rtings display benchmarks</a></li>
+            <li><a href="https://www.displayninja.com">display tech buyer guides</a></li>
+            <li><a href="https://www.w3.org">web accessibility standards</a></li>
         </ul>
-        
-        <div style="margin-top: 50px;">
-            <a href="index.html" style="font-weight: bold;">&larr; return to homepage</a>
-        </div>
+
+        <hr style="margin:40px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.2);">
+
+        <h2>Submit a Question</h2>
+        <form id="inquiryForm">
+            <label for="name">name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="tech">topic:</label>
+            <select id="tech">
+                <option value="oled">oled inquiry</option>
+                <option value="lcd">lcd inquiry</option>
+            </select>
+            
+            <button type="submit" class="cta-btn">submit inquiry</button>
+            <p id="form-status" style="margin-top: 10px;"></p>
+        </form>
     </main>
+    <footer><p>&copy; 2024 oled or lcd project</p></footer>
+    <script src="script.js"></script>
 </body>
 </html>

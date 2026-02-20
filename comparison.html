@@ -3,77 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- todo: unique page title for seo -->
-    <title>Skeletundra | Specific Topic Details</title>
-    <meta name="description" content="detailed technical information regarding this specific display technology">
-    <style>
-        /* todo: copy styles from index.html here for brand consistency */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { background-color: #0b1a26; color: #ffffff; line-height: 1.6; }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-        .logo a { color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold; }
-        .nav-links { display: flex; gap: 40px; list-style: none; }
-        a { color: #1e90ff; text-decoration: underline; }
-        .dropdown { position: relative; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; right: 0; background-color: #162a3a; min-width: 200px; border: 1px solid white; }
-        .dropdown:hover .dropdown-content { display: block; }
-        .dropdown-content a { padding: 12px 16px; display: block; }
-        
-        .content-area { padding: 50px; max-width: 800px; margin: 0 auto; }
-        /* todo: seo hierarchy colors */
-        h1 { margin-bottom: 20px; border-bottom: 3px solid #1e90ff; padding-bottom: 10px; }
-        h2 { margin: 30px 0 10px; color: #1e90ff; }
-        h3 { margin: 20px 0 10px; }
-        ul { margin: 20px 0 20px 30px; }
-        .cta-box { border: 1px solid #1e90ff; padding: 20px; margin-top: 40px; text-align: center; }
-        footer { padding: 40px 50px; border-top: 1px solid rgba(255, 255, 255, 0.3); text-align: center; }
-    </style>
+    <title>OLED or LCD? | Tech Comparison</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo"><a href="index.html">Skeletundra</a></div>
-        <nav>
+    <header role="banner">
+        <div class="logo"><h1><a href="index.html">OLED or LCD?</a></h1></div>
+        <nav role="navigation">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    Specific Info ▾
+                    <a href="#">Specific Info ▾</a>
                     <div class="dropdown-content">
                         <a href="oled.html">OLED Information</a>
                         <a href="comparison.html">Comparison Guide</a>
                         <a href="lcd.html">LCD Information</a>
-                        <a href="resources.html">Resources</a>
+                        <a href="resources.html">Resources & Contact</a>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
-
-    <main class="content-area">
-        <!-- todo: keyword in h1 -->
-        <h1>Display Technology Topic</h1>
-        <p>introductory paragraph placeholder describing the tech</p>
-        
-        <!-- todo: keyword in h2 -->
-        <h2>Technical Specifications</h2>
-        <p>subheading text placeholder</p>
-        
-        <!-- todo: page organized with h3 and bullets -->
-        <h3>Key Advantages</h3>
-        <ul>
-            <li>list item placeholder regarding performance</li>
-            <li>list item placeholder regarding cost</li>
-            <li>list item placeholder regarding longevity</li>
-        </ul>
-
-        <!-- todo: each page has a call to action -->
-        <section class="cta-box">
-            <p>want to see how this compares to other options?</p>
-            <a href="comparison.html" style="font-weight: bold;">view the full comparison chart</a>
-        </section>
+    <main class="container">
+        <h1>Comparison Guide</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>OLED</th>
+                    <th>LCD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Contrast Ratio</td>
+                    <td>Infinite:1</td>
+                    <td>~3000:1</td>
+                </tr>
+                <tr>
+                    <td>Panel Longevity</td>
+                    <td>Moderate</td>
+                    <td>High</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="resources.html" class="cta-btn">next: resources</a>
     </main>
-
-    <footer>
-        <p>&copy; 2024 skeletundra project | <a href="index.html">back to home</a></p>
-    </footer>
+    <footer><p>&copy; 2024 oled or lcd project</p></footer>
+    <script src="script.js"></script>
 </body>
 </html>
