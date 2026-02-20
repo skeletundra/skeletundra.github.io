@@ -17,7 +17,6 @@ header { display: flex; justify-content: space-between; align-items: center; pad
 
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 
-/* todo: restored hero area with cards */
 .hero-wrapper { min-height: 90vh; display: flex; flex-direction: column; justify-content: space-between; padding: 50px 0; }
 .callout { border: 2px solid white; padding: 30px; background: rgba(255,255,255,0.05); max-width: 600px; margin-bottom: 20px; }
 .intro-text { max-width: 900px; margin-bottom: 40px; }
@@ -25,8 +24,10 @@ header { display: flex; justify-content: space-between; align-items: center; pad
 .card-container { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
 .card { border: 1px solid white; padding: 30px; text-align: center; flex: 1; min-width: 280px; background: rgba(255,255,255,0.05); }
 
-/* todo: scrolling audience section */
-.audience-section { padding: 100px 0; border-top: 1px solid rgba(255,255,255,0.1); }
+.section-divider { border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 100px; }
+.section-header { font-size: 2.5rem; text-align: center; padding: 40px 0; }
+
+.audience-section { padding: 0 0 100px 0; }
 .audience-row { display: flex; align-items: center; gap: 50px; margin-bottom: 100px; }
 .audience-row:nth-child(even) { flex-direction: row-reverse; }
 .audience-text { flex: 1; }
