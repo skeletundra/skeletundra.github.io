@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLED or LCD? | Home</title>
-    <meta name="description" content="a technical comparison hub for oled and lcd screen technologies">
+    <meta name="description" content="evaluating the evolution of oled and lcd panel technology for modern users">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- todo: site header -->
     <header role="banner">
         <div class="logo">
             <h1><a href="index.html">
@@ -30,30 +31,92 @@
             </ul>
         </nav>
     </header>
-    <main class="hero">
-        <aside class="callout">
-            <h2>Our Focus</h2>
-            <p>hook: evaluating the evolution of oled and lcd panel technology for modern users</p>
-        </aside>
-        <section class="card-container">
-            <article class="card">
-                <img src="https://via.placeholder.com/300x150" alt="vibrant oled screen example">
-                <h3>OLED Details</h3>
-                <a href="oled.html" class="cta-btn">read about oled</a>
-            </article>
-            <article class="card">
-                <img src="https://via.placeholder.com/300x150" alt="comparison of screen types">
-                <h3>Tech Table</h3>
-                <a href="comparison.html" class="cta-btn">view comparison table</a>
-            </article>
-            <article class="card">
-                <img src="https://via.placeholder.com/300x150" alt="bright lcd screen example">
-                <h3>LCD Details</h3>
-                <a href="lcd.html" class="cta-btn">read about lcd</a>
-            </article>
+
+    <main class="container">
+        <!-- todo: hero section with focus box and cards -->
+        <section class="hero-wrapper">
+            <div>
+                <aside class="callout">
+                    <h2>Our Focus</h2>
+                    <p>Evaluating the evolution of OLED and LCD panel technology for modern users.</p>
+                </aside>
+                <p class="intro-text">In the current digital era, making the decision between using OLED or LCD technology is no longer simply a matter of cost, but a decision based on specific use cases and visual priorities. With panel manufacturing reaching new heights of efficiency, understanding the fundamental differences in light emission, color accuracy, and overall longevity is essential for any modern user seeking an optimal viewing experience.</p>
+            </div>
+
+            <div class="card-container">
+                <article class="card">
+                    <h3>OLED Details</h3>
+                    <a href="oled.html" style="font-weight: bold;">read more</a>
+                </article>
+                <article class="card">
+                    <h3>Tech Table</h3>
+                    <a href="comparison.html" style="font-weight: bold;">read more</a>
+                </article>
+                <article class="card">
+                    <h3>LCD Details</h3>
+                    <a href="lcd.html" style="font-weight: bold;">read more</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- todo: target audience section -->
+        <section class="audience-section">
+            <div class="audience-row">
+                <div class="audience-text">
+                    <h3>For the Creative Professional</h3>
+                    <p>For color-critical professionals, the priority lies in chromatic accuracy and luminance uniformity. Whether engaged in high-end photo editing or complex video production, a display must reproduce colors exactly as they were intended to be seen. Our evaluation focuses on how modern panels maintain consistent output over long work cycles, ensuring that professional standards are never compromised by hardware limitations or color shifting.</p>
+                </div>
+                <img src="https://via.placeholder.com/500x350" alt="creative professional workspace" class="audience-image">
+            </div>
+
+            <div class="audience-row">
+                <div class="audience-text">
+                    <h3>For the Competitive Gamer</h3>
+                    <p>Competitive and casual gamers alike require hardware that can keep pace with high-frame-rate content. Beyond mere resolution, we examine the evolution of response times and the significant reduction of motion blur in modern panels. Whether navigating fast-paced shooters or expansive open-world environments, the focus remains on visual fluidity and the elimination of input lag across various panel architectures.</p>
+                </div>
+                <img src="https://via.placeholder.com/500x350" alt="gaming setup" class="audience-image">
+            </div>
+
+            <div class="audience-row">
+                <div class="audience-text">
+                    <h3>For the Home Cinema Enthusiast</h3>
+                    <p>Creating a cinematic experience at home demands an analysis of depth and atmosphere. The primary metric for this audience is the contrast ratio—specifically the ability to render absolute black levels without "blooming" or light leakage. We examine how display technology manages high dynamic range (HDR) content to deliver an immersive experience that accurately reflects the director's original vision.</p>
+                </div>
+                <img src="https://via.placeholder.com/500x350" alt="home theater environment" class="audience-image">
+            </div>
+        </section>
+
+        <!-- todo: pillars of display performance -->
+        <section class="kpi-section">
+            <h3>Key Performance Indicators</h3>
+            <p>To provide a definitive evaluation, this site examines four primary pillars of display performance:</p>
+            <ul class="kpi-list">
+                <li class="kpi-item">
+                    <span class="kpi-label">Luminance</span>
+                    The capacity for high peak brightness within well-lit environments.
+                </li>
+                <li class="kpi-item">
+                    <span class="kpi-label">Contrast</span>
+                    The ability to achieve absolute black levels through precise, per-pixel illumination control.
+                </li>
+                <li class="kpi-item">
+                    <span class="kpi-label">Longevity</span>
+                    The resilience of panel materials against degradation and permanent image retention over extended periods of use.
+                </li>
+                <li class="kpi-item">
+                    <span class="kpi-label">Efficiency</span>
+                    An analysis of power consumption profiles relative to total light output and heat management.
+                </li>
+            </ul>
+            <p>For a detailed side-by-side technical analysis of these metrics, please visit our <a href="comparison.html">Comparison Guide</a>.</p>
         </section>
     </main>
-    <footer><p>&copy; 2024 oled or lcd project</p></footer>
+
+    <!-- todo: persistent site footer -->
+    <footer>
+        <p>&copy; 2024 oled or lcd project</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
