@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLED or LCD? | OLED Information</title>
+    <meta name="description" content="Technical specifications and objective performance data for OLED display panels.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- todo: site header -->
     <header role="banner">
-        <div class="logo"><h1><a href="index.html">OLED or LCD?</a></h1></div>
+        <div class="logo"><h1><a href="index.html">
+            <img src="https://via.placeholder.com/50x50" alt="OLED or LCD logo" class="logo-img">
+            OLED or LCD?
+        </a></h1></div>
         <nav role="navigation">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -24,18 +29,63 @@
             </ul>
         </nav>
     </header>
+
     <main class="container">
-        <h1>OLED Technology</h1>
-        <p>placeholder text: analyzing organic light emitting diodes</p>
-        <h2>Technical Benefits</h2>
-        <ul>
-            <li>per-pixel dimming capabilities</li>
-            <li>infinite contrast ratios</li>
-            <li>wider viewing angles than standard panels</li>
-        </ul>
-        <a href="comparison.html" class="cta-btn">compare against lcd</a>
+        <!-- todo: fundamental definition and history -->
+        <h1>Organic Light Emitting Diode (OLED)</h1>
+        <p>OLED technology is classified as an emissive display architecture. Unlike transmissive technologies, OLED panels utilize thin-film layers of organic, carbon-based molecules that emit light when an electric current is applied. This process, known as electroluminescence, removes the requirement for a separate backlight assembly. The foundational development of these devices is attributed to Tang and VanSlyke at Eastman Kodak in 1987.</p>
+
+        <!-- todo: architecture and physical properties -->
+        <section class="audience-section">
+            <div class="audience-row">
+                <div class="audience-text">
+                    <h2>Physical Architecture</h2>
+                    <p>The panel architecture consists of thin-film transistors deposited on either rigid or flexible substrates. Because the pixels are self-emissive, the physical profile of an OLED panel is significantly thinner and lighter than transmissive displays. This construction allows for variable brightness control at the individual sub-pixel level.</p>
+                </div>
+                <img src="https://via.placeholder.com/500x350" alt="untitled" class="audience-image">
+            </div>
+
+            <!-- todo: consumer friendly metrics -->
+            <div class="audience-row">
+                <div class="audience-text">
+                    <h2>Technical Performance Metrics</h2>
+                    <ul>
+                        <li><strong>Contrast Ratio:</strong> Theoretically infinite. Because each pixel can turn completely off, the display achieves "true black," resulting in high image depth and detail.</li>
+                        <li><strong>Response Time:</strong> Extremely fast. This technology is capable of changing the color of a pixel almost instantaneously, which significantly reduces ghosting or blur during fast-moving scenes.</li>
+                        <li><strong>Color Accuracy:</strong> Capable of displaying a wide range of colors with high precision, making it suitable for both professional design work and high-quality entertainment.</li>
+                        <li><strong>Viewing Angles:</strong> Provides consistent color and brightness even when viewed from the side, unlike displays that rely on a backlight.</li>
+                    </ul>
+                </div>
+                <img src="https://via.placeholder.com/500x350" alt="untitled" class="audience-image">
+            </div>
+        </section>
+
+        <!-- todo: consumer-facing economic and longevity data -->
+        <section class="kpi-section">
+            <h2>Operational Context and Economic Factors</h2>
+            <ul class="kpi-list">
+                <li class="kpi-item">
+                    <span class="kpi-label">Manufacturing Cost:</span>
+                    Current higher cost structures are driven by vacuum thermal evaporation deposition processes and lower fabrication yield rates compared to mature display technologies.
+                </li>
+                <li class="kpi-item">
+                    <span class="kpi-label">Image Retention:</span>
+                    Cumulative degradation of organic emissive layers can lead to non-uniform brightness output. Modern mitigation protocols include pixel shifting and voltage-compensation algorithms to normalize pixel aging.
+                </li>
+                <li class="kpi-item">
+                    <span class="kpi-label">Power Efficiency:</span>
+                    Power consumption is variable and directly proportional to the average picture level. Brighter content and higher active pixel counts increase total energy draw.
+                </li>
+            </ul>
+        </section>
+
+        <a href="comparison.html" class="cta-btn">View Comparison Guide</a>
     </main>
-    <footer><p>&copy; 2024 oled or lcd project</p></footer>
+
+    <footer>
+        <p>&copy; 2024 OLED or LCD Project</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
