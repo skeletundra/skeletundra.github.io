@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLED or LCD? | LCD Information</title>
+    <meta name="description" content="An easy-to-understand breakdown of LCD display technology, features, and limitations.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- todo: navigation header -->
     <header role="banner">
-        <div class="logo"><h1><a href="index.html">OLED or LCD?</a></h1></div>
+        <div class="logo">
+            <h1>
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="monitoricon.png" alt="a small icon representing a computer monitor" class="logo-img">
+                    OLED or LCD?
+                </a>
+            </h1>
+        </div>
         <nav role="navigation">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -24,18 +33,102 @@
             </ul>
         </nav>
     </header>
+
     <main class="container">
-        <h1>LCD Technology</h1>
-        <p>placeholder text: analyzing liquid crystal displays and backlighting</p>
-        <h2>Technical Benefits</h2>
-        <ul>
-            <li>superior high peak brightness</li>
-            <li>long term durability and resistance to burn-in</li>
-            <li>significantly lower manufacturing cost</li>
+        <!-- todo: transmissive technology definition and history -->
+        <h1>Liquid Crystal Display (LCD)</h1>
+        <p>LCD stands for Liquid Crystal Display. Unlike OLED screens that generate their own light, LCDs are a transmissive technology. This means they rely on a large backlight positioned behind the screen. The screen itself is made of millions of tiny liquid crystal shutters that open and close to block or allow the white backlight to pass through color filters. The foundational development of this dynamic scattering effect occurred at RCA in 1968. Since then, the technology has scaled from simple calculator screens to replacing heavy CRT monitors entirely in the early 2000s.</p>
+
+        <p>&nbsp;</p>
+
+        <p>The progression of this technology was accelerated by several key architectural advancements:</p>
+        <ul style="margin-left: 20px; margin-bottom: 20px;">
+            <li><strong>LED Backlighting:</strong> Older LCDs used thick fluorescent tubes for light. Modern LCDs use Light Emitting Diodes (LEDs), which are thinner, more energy-efficient, and capable of higher brightness.</li>
+            <li><strong>Panel Variations (IPS vs. VA):</strong> Manufacturers developed different crystal alignments. In-Plane Switching (IPS) was created to provide wide viewing angles, while Vertical Alignment (VA) was created to block light more effectively for better contrast.</li>
+            <li><strong>Mini-LED and Local Dimming:</strong> To improve black levels, premium LCDs now divide the backlight into thousands of tiny zones that can dim independently, attempting to replicate the pixel-level control of emissive displays.</li>
         </ul>
-        <a href="comparison.html" class="cta-btn">compare against oled</a>
+        <p>These evolutions have kept LCD technology highly competitive and cost-effective across all consumer electronics categories.</p>
+
+        <hr class="section-divider">
+
+        <section class="audience-section">
+            <div class="audience-row">
+                <div class="audience-text">
+                    <h2>Physical Design and Pricing</h2>
+                    <p>Because an LCD requires a dedicated backlight unit behind the liquid crystal layer, the physical screen is generally thicker and heavier than an OLED panel. However, this multi-layer design is highly cost-effective to produce. The manufacturing process for LCDs is mature and does not require the complex vacuum environments needed for organic materials. This high production yield allows manufacturers to offer LCD screens at a massive range of price points, from entry-level budget televisions to premium, high-brightness computer monitors.</p>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <img src="price2.jpg" alt="An electronics shop and its owner." class="audience-image">
+                    <p style="margin-top: 10px; font-style: italic;">An electronics shop and its owner.</p>
+                </div>
+            </div>
+
+            <div class="audience-row">
+                <div class="audience-text">
+                    <h2>Technical Performance Metrics</h2>
+                    <ul>
+                        <li><strong>Contrast Ratio:</strong> Limited by the backlight. Because liquid crystals cannot block 100% of the light behind them, dark scenes often appear dark gray rather than true black. Local dimming zones improve this, but they can cause light leakage (halos) around bright objects like subtitles.</li>
+                        <li><strong>Response Time:</strong> Liquid crystals must physically rotate to change color. While historically prone to motion blur, modern gaming LCDs use electrical overdrive techniques to achieve very fast transition speeds.</li>
+                        <li><strong>Viewing Angles:</strong> Highly dependent on the panel type. IPS panels retain color accuracy when viewed from the side. VA panels offer much deeper black levels but suffer from color degradation and contrast loss when viewed off-center.</li>
+                        <li><strong>Text Clarity:</strong> Standard LCD monitors use a traditional Red-Green-Blue (RGB) sub-pixel layout. For computer users, this ensures that operating systems render small text with perfect clarity and no color fringing.</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <img src="perf1.jpg" alt="A monitor displaying complex systems." class="audience-image">
+                    <p style="margin-top: 10px; font-style: italic;">A monitor displaying complex systems.</p>
+                </div>
+            </div>
+
+            <div class="audience-row">
+                <div class="audience-text">
+                    <h2>Panel Lifecycle and User Interaction</h2>
+                    <p>The consumer experience of an LCD is heavily defined by its stability. Because the liquid crystals are inorganic, they do not degrade based on what is displayed on the screen. For the average user, this means the display is completely immune to permanent "burn-in." Users can leave static elements—such as news tickers, spreadsheet interfaces, or video game health bars—on the screen for thousands of hours without risking permanent image retention.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>Furthermore, LCDs do not require an Automatic Brightness Limiter (ABL) to manage heat. When a user opens a full-screen white document or a web browser, the screen maintains its exact brightness level without automatically dimming. This sustained brightness consistency makes the technology highly reliable for productivity tasks and long-term daily operation in well-lit environments.</p>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <img src="user2.jpg" alt="A man working at his computer." class="audience-image">
+                    <p style="margin-top: 10px; font-style: italic;">A man working at his computer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- todo: pillars of display performance -->
+        <section class="kpi-section">
+            <h2>Core Performance Pillars and Daily Operation</h2>
+            <ul class="kpi-list">
+                <li class="kpi-item">
+                    <span class="kpi-label">Luminance (Brightness)</span>
+                    LCDs excel at sustained brightness. A high-end LCD can output massive amounts of light across the entire screen simultaneously and hold that brightness indefinitely. This makes them the optimal choice for rooms with large windows or direct sunlight.
+                </li>
+                <li class="kpi-item">
+                    <span class="kpi-label">Contrast</span>
+                    The transmissive nature of the technology restricts native contrast. Even on premium models featuring Mini-LED local dimming, the backlight zones are larger than individual pixels. This results in halos of light surrounding bright objects on dark backgrounds.
+                </li>
+                <li class="kpi-item">
+                    <span class="kpi-label">Longevity (Burn-In Immunity)</span>
+                    The materials used in LCD panels are highly resilient. While the LED backlight may slowly lose peak brightness over a decade of use, the screen will never develop permanent ghost images from static content.
+                </li>
+                <li class="kpi-item">
+                    <span class="kpi-label">Efficiency</span>
+                    On standard LCDs, the backlight remains illuminated uniformly regardless of the image on screen. This means displaying a dark movie scene uses roughly the same amount of electricity as displaying a bright white document. Models with local dimming save power by turning off LEDs in dark areas.
+                </li>
+            </ul>
+        </section>
+
+        <!-- todo: comparative cta buttons -->
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+            <a href="oled.html" class="cta-btn">Next: Read OLED Information</a>
+            <a href="comparison.html" class="cta-btn" style="background: transparent; border: 2px solid #1e90ff; color: #1e90ff;">Skip to Comparison Guide</a>
+        </div>
     </main>
-    <footer><p>&copy; 2024 oled or lcd project</p></footer>
+
+    <footer>
+        <p>&copy; 2024 OLED or LCD Project</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

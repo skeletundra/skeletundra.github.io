@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLED or LCD? | Tech Comparison</title>
+    <title>OLED or LCD? | Comparison Guide</title>
+    <meta name="description" content="A side-by-side technical and operational comparison of OLED and LCD display technologies.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- todo: site header without image logo -->
     <header role="banner">
-        <div class="logo"><h1><a href="index.html">OLED or LCD?</a></h1></div>
+        <div class="logo">
+            <h1>
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="monitoricon.png" alt="untitled" class="logo-img">
+                    OLED or LCD?
+                </a>
+            </h1>
+        </div>
         <nav role="navigation">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -24,32 +33,152 @@
             </ul>
         </nav>
     </header>
+
     <main class="container">
-        <h1>Comparison Guide</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Metric</th>
-                    <th>OLED Panel</th>
-                    <th>LCD Panel</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Contrast Ratio</td>
-                    <td>Infinite:1</td>
-                    <td>~3000:1</td>
-                </tr>
-                <tr>
-                    <td>Panel Longevity</td>
-                    <td>Moderate</td>
-                    <td>High</td>
-                </tr>
-            </tbody>
-        </table>
-        <a href="resources.html" class="cta-btn">go to resources</a>
+        <!-- todo: page introduction -->
+        <h1 style="margin-top: 40px;">Comparison Guide: OLED vs. LCD</h1>
+        <p>Choosing the correct display technology requires an objective evaluation of how specific hardware characteristics align with the intended operating environment. Because OLED and LCD utilize completely different methods for generating and controlling light, their performance metrics differ significantly. The separated data tables below provide direct specification comparisons, followed by a detailed bulleted analysis of how these metrics affect daily consumer operation.</p>
+
+        <!-- todo: visual performance table -->
+        <h2 style="margin-top: 60px;">Table 1: Visual Performance and Contrast</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Performance Metric</th>
+                        <th scope="col">OLED (Organic Light Emitting Diode)</th>
+                        <th scope="col">LCD (Liquid Crystal Display)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Native Contrast Ratio</th>
+                        <td>Infinite:1 (Pixels output zero luminance)</td>
+                        <td>1000:1 to 5000:1 (Dependent on panel type)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Viewing Angles</th>
+                        <td>Wide (Consistent color off-axis)</td>
+                        <td>Narrow to Moderate (Degradation heavily present on VA panels)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Black Level Accuracy</th>
+                        <td>Absolute zero light emission</td>
+                        <td>Variable (Light leakage through liquid crystal layer)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- todo: motion and luminance table -->
+        <h2>Table 2: Motion, Speed, and Luminance</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Performance Metric</th>
+                        <th scope="col">OLED (Organic Light Emitting Diode)</th>
+                        <th scope="col">LCD (Liquid Crystal Display)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Peak Luminance</th>
+                        <td>Moderate to High (Restricted by ABL)</td>
+                        <td>Very High (Sustained across entire panel indefinitely)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Response Time (GtG)</th>
+                        <td>< 1 millisecond (Near instantaneous)</td>
+                        <td>1 to 5 milliseconds (Requires physical crystal rotation)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Variable Refresh Rate (VRR)</th>
+                        <td>High compatibility, potential for minor near-black flicker</td>
+                        <td>High compatibility, highly stable gamma levels</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- todo: durability and environment table -->
+        <h2>Table 3: Durability and Operation</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Performance Metric</th>
+                        <th scope="col">OLED (Organic Light Emitting Diode)</th>
+                        <th scope="col">LCD (Liquid Crystal Display)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Burn-In Risk</th>
+                        <td>Present (Cumulative organic layer degradation)</td>
+                        <td>None (Inorganic materials resist retention entirely)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Text Rendering Clarity</th>
+                        <td>Variable (Sub-pixel layouts can cause color fringing)</td>
+                        <td>High (Standard RGB layout provides sharp operating system text)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Power Efficiency</th>
+                        <td>Dynamic (Scales directly with screen brightness content)</td>
+                        <td>Static (Backlight remains illuminated regardless of dark content)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr class="section-divider">
+
+        <!-- todo: detailed comparative analysis via bullet points -->
+        <section style="padding: 40px 0;">
+            <h2>Contrast and Black Level Analysis</h2>
+            <p>The management of black levels is the most significant differential between the two technologies:</p>
+            <ul style="margin-left: 30px; margin-top: 15px; margin-bottom: 40px;">
+                <li style="margin-bottom: 10px;"><strong>OLED Architecture:</strong> Because OLED displays are self-emissive, the hardware completely removes electrical current from pixels in dark areas. This results in the absolute absence of light emission, creating an infinite contrast ratio.</li>
+                <li style="margin-bottom: 10px;"><strong>LCD Architecture:</strong> LCD panels must actively block an always-on backlight. Because the liquid crystals cannot achieve 100 percent opacity, some light passes through the screen.</li>
+                <li style="margin-bottom: 10px;"><strong>Consumer Application:</strong> Premium LCDs utilize local dimming zones to turn off sections of the backlight, but these zones are physically larger than individual pixels. This limitation causes light leakage, presenting as a visible halo around bright objects on a dark background. OLED is therefore optimally suited for cinematic content in rooms with low ambient light.</li>
+            </ul>
+
+            <h2>Luminance and Environmental Suitability</h2>
+            <p>The ability to output and sustain brightness dictates the ideal physical placement of the display:</p>
+            <ul style="margin-left: 30px; margin-top: 15px; margin-bottom: 40px;">
+                <li style="margin-bottom: 10px;"><strong>LCD Advantage:</strong> LCD technology maintains a distinct advantage in sustained luminance. Because the backlight unit is separate from the color-producing layer, an LCD can output maximum brightness across 100 percent of the screen simultaneously without risking thermal damage.</li>
+                <li style="margin-bottom: 10px;"><strong>OLED Constraint:</strong> OLED panels are constrained by the heat generated by organic materials. To prevent damage, OLED displays employ an Automatic Brightness Limiter (ABL). When a large portion of the screen displays bright content, the hardware automatically reduces the total luminance output.</li>
+                <li style="margin-bottom: 10px;"><strong>Consumer Application:</strong> LCD is the optimal hardware for environments with direct sunlight or heavy overhead lighting, whereas OLED provides superior performance in controlled, dimmer lighting environments.</li>
+            </ul>
+
+            <h2>Motion Handling and Refresh Rates</h2>
+            <p>For rendering high-speed content, the physical limitations of the hardware dictate image clarity:</p>
+            <ul style="margin-left: 30px; margin-top: 15px; margin-bottom: 40px;">
+                <li style="margin-bottom: 10px;"><strong>OLED Speed:</strong> The electrical transition of the organic layer occurs in a fraction of a millisecond. This completely eliminates the visual trail behind moving objects, providing exact image clarity during fast camera panning.</li>
+                <li style="margin-bottom: 10px;"><strong>LCD Mechanism:</strong> LCD panels require the physical rotation of liquid crystals to change states. While modern LCDs use electrical overdrive techniques to accelerate this rotation, the physical movement is inherently slower than an electrical state change.</li>
+                <li style="margin-bottom: 10px;"><strong>Consumer Application:</strong> Gamers requiring absolute motion clarity benefit heavily from OLED. However, LCDs handle variable refresh rates (VRR) with higher gamma stability, whereas OLED panels can exhibit minor luminance fluctuations during frame rate shifts.</li>
+            </ul>
+
+            <h2>Durability and Static Interface Usage</h2>
+            <p>Consumers utilizing a display for productivity tasks must account for material durability over time:</p>
+            <ul style="margin-left: 30px; margin-top: 15px; margin-bottom: 40px;">
+                <li style="margin-bottom: 10px;"><strong>LCD Resilience:</strong> LCDs use inorganic materials that do not degrade based on specific content. A user can display a static interface, such as a spreadsheet or taskbar, for thousands of hours with zero risk of permanent image retention.</li>
+                <li style="margin-bottom: 10px;"><strong>OLED Degradation:</strong> OLED panels degrade based on the total electrical load per pixel. If a static element remains on the screen continuously, the organic materials in that specific area will lose luminance capacity faster than the surrounding pixels, leading to permanent image retention.</li>
+                <li style="margin-bottom: 10px;"><strong>Consumer Application:</strong> For prolonged desktop computing, software programming, or displaying news tickers, LCD remains the definitive choice due to its immunity to static content burn-in.</li>
+            </ul>
+        </section>
+
+        <!-- todo: reading flow ctas -->
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+            <a href="resources.html" class="cta-btn">Next: Resources & Contact</a>
+        </div>
     </main>
-    <footer><p>&copy; 2024 oled or lcd project</p></footer>
+
+    <footer>
+        <p>&copy; 2024 OLED or LCD Project</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

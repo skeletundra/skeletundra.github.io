@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLED or LCD? | OLED Information</title>
-    <meta name="description" content="Technical specifications and objective performance data for OLED display panels.">
+    <meta name="description" content="An easy-to-understand breakdown of OLED display technology, features, and limitations.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- todo: site header -->
+    <!-- todo: navigation header with text branding -->
     <header role="banner">
-        <div class="logo"><h1><a href="index.html">
-            <img src="https://via.placeholder.com/50x50" alt="OLED or LCD logo" class="logo-img">
-            OLED or LCD?
-        </a></h1></div>
+        <div class="logo">
+            <h1>
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="monitoricon.png" alt="untitled" class="logo-img">
+                    OLED or LCD?
+                </a>
+            </h1>
+        </div>
         <nav role="navigation">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -31,55 +35,93 @@
     </header>
 
     <main class="container">
-        <!-- todo: fundamental definition and history -->
+        <!-- todo: consumer accessible definition and history -->
         <h1>Organic Light Emitting Diode (OLED)</h1>
-        <p>OLED technology is classified as an emissive display architecture. Unlike transmissive technologies, OLED panels utilize thin-film layers of organic, carbon-based molecules that emit light when an electric current is applied. This process, known as electroluminescence, removes the requirement for a separate backlight assembly. The foundational development of these devices is attributed to Tang and VanSlyke at Eastman Kodak in 1987.</p>
+        <p>OLED stands for Organic Light Emitting Diode. Unlike standard screens that rely on a large backlight shining through a color filter, OLED panels use thin layers of carbon-based materials. When electricity passes through these layers, they create their own light. This means every individual pixel on the screen controls its own brightness. The foundational development of these devices began at Eastman Kodak in 1987. Since then, the technology has grown from small cell phone screens to large, high-resolution televisions and computer monitors.</p>
 
-        <!-- todo: architecture and physical properties -->
+        <p>&nbsp;</p>
+
+        <p>The progression of this technology was accelerated by several key architectural advancements:</p>
+        <ul style="margin-left: 20px; margin-bottom: 20px;">
+            <li><strong>Upgraded Wiring (LTPS):</strong> Better internal backplates allowed the screens to handle the high speeds required for modern high-resolution displays.</li>
+            <li><strong>White OLED (WOLED):</strong> Manufacturers figured out how to use a white light-emitting layer paired with color filters, which finally made producing large TV sizes reliable and cost-effective.</li>
+            <li><strong>Quantum Dot OLED (QD-OLED):</strong> The newest panels use tiny nanoparticles (quantum dots) to boost brightness and color vibrancy while maintaining perfect black levels.</li>
+        </ul>
+        <p>These evolutions have made OLED a standard choice for premium consumer electronics.</p>
+
+        <hr class="section-divider">
+
+        <!-- todo: oled technical section with captions beneath images -->
         <section class="audience-section">
             <div class="audience-row">
                 <div class="audience-text">
-                    <h2>Physical Architecture</h2>
-                    <p>The panel architecture consists of thin-film transistors deposited on either rigid or flexible substrates. Because the pixels are self-emissive, the physical profile of an OLED panel is significantly thinner and lighter than transmissive displays. This construction allows for variable brightness control at the individual sub-pixel level.</p>
+                    <h2>Physical Design and Pricing</h2>
+                    <p>Because every pixel makes its own light, OLED screens do not need a bulky backlight behind them. As a result, the physical screen is significantly thinner and lighter than traditional displays. However, there is a reason they cost more. Manufacturing these large glass panels requires incredibly clean, complex vacuum environments. Producing them without defects is harder and more expensive than making standard screens, and that premium manufacturing cost is passed on to the consumer.</p>
                 </div>
-                <img src="https://via.placeholder.com/500x350" alt="untitled" class="audience-image">
+                <div style="flex: 1; text-align: center;">
+                    <img src="price1.jpg" alt="A man testing a laptop." class="audience-image">
+                    <p style="margin-top: 10px; font-style: italic;">A man testing a laptop.</p>
+                </div>
             </div>
 
-            <!-- todo: consumer friendly metrics -->
             <div class="audience-row">
                 <div class="audience-text">
                     <h2>Technical Performance Metrics</h2>
                     <ul>
-                        <li><strong>Contrast Ratio:</strong> Theoretically infinite. Because each pixel can turn completely off, the display achieves "true black," resulting in high image depth and detail.</li>
-                        <li><strong>Response Time:</strong> Extremely fast. This technology is capable of changing the color of a pixel almost instantaneously, which significantly reduces ghosting or blur during fast-moving scenes.</li>
-                        <li><strong>Color Accuracy:</strong> Capable of displaying a wide range of colors with high precision, making it suitable for both professional design work and high-quality entertainment.</li>
-                        <li><strong>Viewing Angles:</strong> Provides consistent color and brightness even when viewed from the side, unlike displays that rely on a backlight.</li>
+                        <li><strong>Contrast Ratio:</strong> Infinite. Because individual pixels can turn completely off, the screen displays true black. This removes the grayish glow seen on other displays in dark rooms.</li>
+                        <li><strong>Response Time:</strong> Extremely fast. Pixels change color almost instantly, which completely eliminates motion blur during fast action scenes or sports.</li>
+                        <li><strong>Variable Refresh Rate (VRR):</strong> Excellent for gaming fluidity. However, because of how organic pixels hold electrical charge, rapidly changing frame rates in dark gaming scenes can sometimes cause slight flickering.</li>
+                        <li><strong>Viewing Angles and Color:</strong> Colors remain accurate and vibrant even when viewed from extreme side angles, meaning there is no "bad seat" in the room.</li>
                     </ul>
                 </div>
-                <img src="https://via.placeholder.com/500x350" alt="untitled" class="audience-image">
+                <div style="flex: 1; text-align: center;">
+                    <img src="perf1.jpg" alt="A backlit computer setup." class="audience-image">
+                    <p style="margin-top: 10px; font-style: italic;">A backlit computer setup.</p>
+                </div>
+            </div>
+
+            <div class="audience-row">
+                <div class="audience-text">
+                    <h2>Panel Lifecycle and User Interaction</h2>
+                    <p>Unlike standard screens, OLED pixels generate their own light, meaning there is zero light bleeding between a bright object and a dark background. However, for people using an OLED as a computer monitor, the sub-pixel layout is important. Many OLED monitors use a non-standard pixel arrangement. In operating systems like Windows, this can cause "text fringing," where the edges of text appear slightly blurry or have colorful outlines.</p>
+
+                    <p>&nbsp;</p>
+
+                    <p>Furthermore, as display sizes scale upward, OLED panels maintain consistent pixel density without the complex masking or local-dimming zone requirements seen in large-format backlit displays. From an interaction standpoint, the technology is optimized for both static and dynamic content. While high-motion content benefits from the near-instantaneous pixel response, static usage requires the panel's internal management software to actively monitor pixel usage. This ensures that the display remains calibrated to the user's specific viewing habits over several years.</p>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <img src="user1.jpg" alt="An individual working at their computer." class="audience-image">
+                    <p style="margin-top: 10px; font-style: italic;">An individual working at their computer.</p>
+                </div>
             </div>
         </section>
 
-        <!-- todo: consumer-facing economic and longevity data -->
         <section class="kpi-section">
-            <h2>Operational Context and Economic Factors</h2>
+            <h2>Core Performance Pillars and Daily Operation</h2>
             <ul class="kpi-list">
                 <li class="kpi-item">
-                    <span class="kpi-label">Manufacturing Cost:</span>
-                    Current higher cost structures are driven by vacuum thermal evaporation deposition processes and lower fabrication yield rates compared to mature display technologies.
+                    <span class="kpi-label">Luminance (Brightness) and ABL</span>
+                    To protect the organic screen from overheating, OLEDs use an Automatic Brightness Limiter (ABL). If you open a full-screen white document, the screen will noticeably dim itself to stay cool. Additionally, the glossy finish on many OLEDs means they can act like mirrors in rooms with heavy sunlight.
                 </li>
                 <li class="kpi-item">
-                    <span class="kpi-label">Image Retention:</span>
-                    Cumulative degradation of organic emissive layers can lead to non-uniform brightness output. Modern mitigation protocols include pixel shifting and voltage-compensation algorithms to normalize pixel aging.
+                    <span class="kpi-label">Contrast</span>
+                    The ability to shut off individual pixels creates perfect black levels. This completely eliminates the glowing halos often seen around subtitles or bright streetlights in dark movie scenes on traditional screens.
                 </li>
                 <li class="kpi-item">
-                    <span class="kpi-label">Power Efficiency:</span>
-                    Power consumption is variable and directly proportional to the average picture level. Brighter content and higher active pixel counts increase total energy draw.
+                    <span class="kpi-label">Longevity (Burn-In)</span>
+                    The organic materials wear down over time. Keeping static images on the screen for hundreds of hours can lead to permanent burn-in, leaving a faint ghost image on the screen.
+                </li>
+                <li class="kpi-item">
+                    <span class="kpi-label">Efficiency</span>
+                    Power usage changes constantly based on what you are watching. Viewing a dark, moody movie uses very little electricity because most pixels are off. Conversely, viewing a bright, snow-filled scene uses significantly more power than a standard backlit screen.
                 </li>
             </ul>
         </section>
 
-        <a href="comparison.html" class="cta-btn">View Comparison Guide</a>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+            <a href="lcd.html" class="cta-btn">Next: Read LCD Information</a>
+            <a href="comparison.html" class="cta-btn" style="background: transparent; border: 2px solid #1e90ff; color: #1e90ff;">Skip to Comparison Guide</a>
+        </div>
     </main>
 
     <footer>

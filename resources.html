@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLED or LCD? | Resources</title>
+    <title>OLED or LCD? | Resources & Contact</title>
+    <meta name="description" content="Verified technical resources and contact inquiry for display technology research.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- todo: site header -->
     <header role="banner">
-        <div class="logo"><h1><a href="index.html">OLED or LCD?</a></h1></div>
+        <div class="logo">
+            <h1>
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+                    <img src="monitoricon.png" alt="untitled" class="logo-img">
+                    OLED or LCD?
+                </a>
+            </h1>
+        </div>
         <nav role="navigation">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -24,35 +33,60 @@
             </ul>
         </nav>
     </header>
+
     <main class="container">
-        <h1>Resources & Contact</h1>
-        <ul>
-            <li><a href="https://www.rtings.com">rtings display benchmarks</a></li>
-            <li><a href="https://www.displayninja.com">display tech buyer guides</a></li>
-            <li><a href="https://www.w3.org">web accessibility standards</a></li>
+        <!-- todo: verified resources list -->
+        <h1 style="margin-top: 40px;">Resources & Works Cited</h1>
+        <p>The following technical publications and industry standards provided the data utilized throughout this project:</p>
+        
+        <h2 style="margin-top: 40px;">LCD Technology References</h2>
+        <ul class="kpi-list" style="list-style: disc; margin-left: 20px;">
+            <li style="margin-bottom: 15px;">Heilmeier, G. H., Zanoni, L. A., & Barton, L. A. (1968). "Dynamic scattering: A new electrooptic effect in certain classes of nematic liquid crystals." Proceedings of the IEEE. <br> <a href="https://ieeexplore.ieee.org/document/1448500">https://ieeexplore.ieee.org/document/1448500</a></li>
+            <li style="margin-bottom: 15px;">Society for Information Display (SID). "Journal of the Society for Information Display Archive." <br> <a href="https://sid.onlinelibrary.wiley.com/journal/19383630">https://sid.onlinelibrary.wiley.com/journal/19383630</a></li>
+            <li style="margin-bottom: 15px;">VESA (Video Electronics Standards Association). "DisplayHDR Performance Criteria." <br> <a href="https://displayhdr.org/performance-criteria/">https://displayhdr.org/performance-criteria/</a></li>
+            <li style="margin-bottom: 15px;">RTINGS.com Display Testing Methodology. "Contrast Ratio and Local Dimming." <br> <a href="https://www.rtings.com/tv/tests/picture-quality/contrast-ratio">https://www.rtings.com/tv/tests/picture-quality/contrast-ratio</a></li>
+            <li style="margin-bottom: 15px;">Energy Star International. "Displays Specification Version 8.0." <br> <a href="https://www.energystar.gov/products/specifications/displays_version_8_0">https://www.energystar.gov/products/specifications/displays_version_8_0</a></li>
         </ul>
 
-        <hr style="margin:40px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.2);">
+        <h2 style="margin-top: 40px;">OLED Technology References</h2>
+        <ul class="kpi-list" style="list-style: disc; margin-left: 20px;">
+            <li style="margin-bottom: 15px;">Tang, C. W., & VanSlyke, S. A. (1987). "Organic electroluminescent diodes." Applied Physics Letters. <br> <a href="https://pubs.aip.org/aip/apl/article/51/12/913/232491/Organic-electroluminescent-diodes">https://pubs.aip.org/aip/apl/article/51/12/913/232491/Organic-electroluminescent-diodes</a></li>
+            <li style="margin-bottom: 15px;">VESA (Video Electronics Standards Association). "Certified Adaptive-Sync Display (VRR)." <br> <a href="https://www.adaptivesync.org/">https://www.adaptivesync.org/</a></li>
+            <li style="margin-bottom: 15px;">RTINGS.com Display Testing Methodology. "OLED Longevity and Burn-in Testing." <br> <a href="https://www.rtings.com/tv/tests/longevity-burn-in-test-updates-and-results">https://www.rtings.com/tv/tests/longevity-burn-in-test-updates-and-results</a></li>
+            <li style="margin-bottom: 15px;">Wiley Online Library / Journal of the SID. "Sub-pixel Rendering and Visual Acuity." <br> <a href="https://sid.onlinelibrary.wiley.com/doi/abs/10.1002/jsid.1147">https://sid.onlinelibrary.wiley.com/doi/abs/10.1002/jsid.1147</a></li>
+        </ul>
 
-        <h2>Submit a Question</h2>
-        <form id="inquiryForm">
-            <label for="name">name:</label>
-            <input type="text" id="name" name="name" required>
+        <hr class="section-divider">
+
+        <!-- todo: technical inquiry form -->
+        <section class="kpi-section">
+            <h2>Technical Inquiry</h2>
+            <p>For specific questions regarding display hardware or evaluation methodologies, please submit an inquiry using the form below.</p>
             
-            <label for="email">email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="tech">topic:</label>
-            <select id="tech">
-                <option value="oled technology">oled inquiry</option>
-                <option value="lcd technology">lcd inquiry</option>
-            </select>
-            
-            <button type="submit" class="cta-btn">submit inquiry</button>
-            <p id="form-status" style="margin-top: 15px;"></p>
-        </form>
+            <form id="inquiryForm">
+                <label for="name">Full Name or Alias:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                
+                <label for="tech">Topic of Interest:</label>
+                <select id="tech" name="tech">
+                    <option value="OLED Information">OLED Technology</option>
+                    <option value="LCD Information">LCD Technology</option>
+                    <option value="General Comparison">General Comparison</option>
+                </select>
+                
+                <button type="submit" class="cta-btn">Submit Inquiry</button>
+                <p id="form-status" style="margin-top: 15px; font-weight: bold;"></p>
+            </form>
+        </section>
     </main>
-    <footer><p>&copy; 2024 oled or lcd project</p></footer>
+
+    <footer>
+        <p>&copy; 2024 OLED or LCD Project</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

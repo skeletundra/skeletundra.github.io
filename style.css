@@ -5,8 +5,10 @@ a { color: #1e90ff; text-decoration: underline; }
 h1, h2, h3 { color: #ffffff; margin-bottom: 1rem; }
 h1 { font-size: 2.2rem; border-bottom: 3px solid #1e90ff; padding-bottom: 10px; }
 
+/* todo: updated header logo alignment and icon size */
 header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; border-bottom: 1px solid rgba(255,255,255,0.3); }
-.logo-img { height: 50px; width: auto; vertical-align: middle; margin-right: 10px; }
+.logo h1 { display: flex; align-items: center; font-size: 1.8rem; }
+.logo-img { height: 35px; width: auto; margin-right: 12px; vertical-align: middle; }
 .nav-links { display: flex; gap: 30px; list-style: none; }
 .nav-links li a { display: block; min-height: 46px; padding: 10px; text-decoration: underline; }
 
@@ -37,6 +39,18 @@ header { display: flex; justify-content: space-between; align-items: center; pad
 .kpi-list { list-style: none; margin: 30px 0; }
 .kpi-item { margin-bottom: 25px; padding-left: 20px; border-left: 3px solid #1e90ff; }
 .kpi-label { font-weight: bold; color: #1e90ff; display: block; }
+
+.table-wrapper { overflow-x: auto; margin: 30px 0 60px 0; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; background: #162a3a; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 18px 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+th { background: #1e90ff; color: #0b1a26; font-size: 1.1rem; letter-spacing: 0.5px; }
+tbody tr:nth-child(even) { background: rgba(255,255,255,0.03); }
+tbody tr:hover { background: rgba(30,144,255,0.15); transition: background 0.2s; }
+tbody th { color: #a0c4ff; font-weight: bold; width: 25%; }
+
+form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin-top: 20px; }
+input, select { padding: 12px; font-size: 18px; border: 1px solid #1e90ff; background: #0b1a26; color: white; }
+.cta-btn { background: #1e90ff; color: #0b1a26; padding: 12px 25px; border: none; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; text-align: center; }
 
 footer { padding: 40px; border-top: 1px solid rgba(255,255,255,0.3); text-align: center; }
 
